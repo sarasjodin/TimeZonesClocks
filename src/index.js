@@ -45,6 +45,8 @@ function updateCities(event) {
   if (selectedValue !== "") {
     selectedCity = selectedValue;
     updateTime();
+  } else {
+    location.reload();
   }
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
