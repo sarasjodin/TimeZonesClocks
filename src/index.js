@@ -42,7 +42,11 @@ function updateTime() {
 
 function updateCities(event) {
   let selectedValue = event.target.value;
-  if (selectedValue !== "") {
+  if (event.target.value === "current") {
+    selectedCity = moment.tz.guess();
+    //event.target.value = moment.tz.guess();
+    updateTime();
+  } else if (selectedValue !== "") {
     selectedCity = selectedValue;
     updateTime();
   } else {
