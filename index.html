@@ -6,18 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src\styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-10-year-range.min.js"></script>
     <title>Time Zones Clocks by sarasjodin.com</title>
 </head>
 
 <body>
-    <h1>Time Zones Clocks</h1>
+    <div class="container">
+        <h1>Time Zones Clocks</h1>
+    </div>
+    <label for="cities">Select a city</label>
+    <select name="city" id="cities">
+        <option value="">Choose option</option>
+        <option value="stockholm">Stockholm</option>
+        <option value="newyork">New York</option>
+        <option value="auckland">Auckland</option>
+    </select>
+
+    <div class="cities">
+        <h2>Los Angeles</h2>
+        <div class="date">June 26th 2023</div>
+        <div class="time">1:48:15 AM</div>
+        <h2>Sydney</h2>
+        <div class="date">June 26th 2023</div>
+        <div class="time">1:48:15 AM</div>
+        <h2>Tokyo</h2>
+        <div class="date">June 26th 2023</div>
+        <div class="time">1:48:15 AM</div>
+        <h2>London</h2>
+        <div class="date">June 26th 2023</div>
+        <div class="time">1:48:15 AM</div>
+    </div>
     <footer>
         This project was coded by <a href="https://www.sarasjodin.com" target="_blank">sarasjodin.com</a> and is open
         sourced on <a href="https://github.com/sarasjodin/TimeZoneClocks" target="_blank">GitHub</a>
-        <script src="src\index.js">
 
-        </script>
     </footer>
+    <script src="src\index.js">
+
+    </script>
 </body>
 
 </html>
